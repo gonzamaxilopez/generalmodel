@@ -1,0 +1,25 @@
+\begin{table}[h!]
+\caption{The effective contribution $\psi$ and the mating probability $\phi$ for zero-inflated Poisson (ZIPo) and zero-inflated negative binomial (ZINB) models}
+\label{table:function}
+\centering
+\resizebox{\textwidth}{!}{
+%\centering
+\begin{tabular}{c c c}
+\Hline
+\multirow{2}{*}{\minitab[c]{Statistical\\model}}    & \multirow{2}{*}{effective contribution} & \multirow{2}{*}{mating probability}
+\\
+%\hline
+  &  &\\
+  %\hline
+  &  &\\
+  \hline
+ZIPo  & $\psi=\exp\left( \dfrac{m}{1-\pi}(z-1)\right) $ & $\phi=1-\exp\left( -\dfrac{m z \beta}{1-\pi}\right) $ \\
+%\hline
+  &  &\\
+%\hline
+ZINB  & $\psi=\left[ 1-\dfrac{m}{k(1-\pi)}(z-1)\right] ^{-(k+1)}$ & $\phi=1- \left[ \dfrac{1-\dfrac{m}{k(1-\pi)}(\alpha z-1)}{1-\dfrac{m}{k(1-\pi)}(z-1)}\right] ^{-(k+1)}$ \\
+%\hline
+&  &\\
+\end{tabular}
+}
+\end{table}

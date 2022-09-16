@@ -1,0 +1,19 @@
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.99\linewidth]{functionv3}
+\caption{The mean effective contribution per female parasite, $\psi$ (left) and the mating probability, $\phi$ (right) corresponding to Poisson (dash curve), negative binomial (solid curve), zero-inflated Poisson (dot curve) and zero-inflated negative binomial (dash dot curve) distributions. All as a function of mean parasite burden $m$.}
+\label{fig:phi}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+%\centerline{\includegraphics[width=2.25in]{mouse.eps}}
+\centering
+\includegraphics[width=0.99\linewidth]{phi-inde}
+\caption{Mating probability as a function of mean parasite burden $m$. The dashed curve (red) corresponds to a Poisson distribution ($k\to \infty$).
+%{\color{red}
+The solid and dotted curves correspond to a negative binomial distribution with joint or independent distribution by sex, respectively, where $k = 1$ (blue), $k =0.2$ (yellow) and $k =0.05$ (green).
+%}
+}
+\label{fig:funphi}
+\end{figure}

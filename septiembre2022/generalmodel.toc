@@ -1,0 +1,28 @@
+\babel@toc {english}{}
+\contentsline {section}{Abstract}{1}{Doc-Start}% 
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}% 
+\contentsline {section}{\numberline {2}Distribution and abundance of parasites}{3}{section.2}% 
+\contentsline {section}{\numberline {3}Mating probability of parasites acquired by ingestion of eggs}{4}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Distribution of parasites by sex}{4}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Mean number of fertilized female parasites and mating probability (density-independent)}{5}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Density-dependent fecundity}{5}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Mean egg production per host}{6}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5}Mean fertilized egg production}{6}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.6}Mating probability and density-dependence effects}{7}{subsection.3.6}% 
+\contentsline {subsection}{\numberline {3.7}Mean effective transmission contribution per female parasite}{7}{subsection.3.7}% 
+\contentsline {subsection}{\numberline {3.8}Some examples}{7}{subsection.3.8}% 
+\contentsline {subsubsection}{\numberline {3.8.1}Poisson}{8}{subsubsection.3.8.1}% 
+\contentsline {subsubsection}{\numberline {3.8.2}Negative binomial}{8}{subsubsection.3.8.2}% 
+\contentsline {subsubsection}{\numberline {3.8.3}Zero-inflated and hurdle Models}{9}{subsubsection.3.8.3}% 
+\contentsline {subsubsection}{\numberline {3.8.4}Zero-inflated Poisson and zero-inflated negative binomial models}{10}{subsubsection.3.8.4}% 
+\contentsline {section}{\numberline {4}Mating probability of parasites acquired by skin-penetrating}{11}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Some examples}{12}{subsection.4.1}% 
+\contentsline {subsubsection}{\numberline {4.1.1}Poisson}{12}{subsubsection.4.1.1}% 
+\contentsline {subsubsection}{\numberline {4.1.2}Negative binomial}{13}{subsubsection.4.1.2}% 
+\contentsline {section}{\numberline {5}Discussion and Conclusions}{14}{section.5}% 
+\contentsline {section}{Bibliography}{15}{section*.4}% 
+\contentsline {section}{\numberline {A}Appendix}{17}{appendix.A}% 
+\contentsline {subsection}{\numberline {A.1}Mean number of fertilized female parasites}{17}{subsection.A.1}% 
+\contentsline {subsection}{\numberline {A.2}Mean egg production per host}{18}{subsection.A.2}% 
+\contentsline {subsection}{\numberline {A.3}Mean fertilized egg production per host}{18}{subsection.A.3}% 
+\contentsline {subsection}{\numberline {A.4}Independence in the variables $F$ and $M$}{19}{subsection.A.4}% 
