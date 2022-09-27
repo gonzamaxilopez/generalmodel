@@ -8,45 +8,45 @@ Warning--empty author in castelletto2014diverso
 Warning--empty year in castelletto2014diverso
 Warning--empty journal in castelletto2014diverso
 Warning--empty year in seo1979egg
-You've used 24 entries,
+You've used 22 entries,
             1940 wiz_defined-function locations,
-            632 strings with 8270 characters,
-and the built_in function-call counts, 9719 in all, are:
-= -- 957
-> -- 394
-< -- 12
-+ -- 138
-- -- 132
-* -- 907
-:= -- 1674
-add.period$ -- 72
-call.type$ -- 24
-change.case$ -- 184
-chr.to.int$ -- 24
-cite$ -- 30
-duplicate$ -- 338
-empty$ -- 666
-format.name$ -- 167
-if$ -- 1854
+            621 strings with 7917 characters,
+and the built_in function-call counts, 9205 in all, are:
+= -- 901
+> -- 380
+< -- 10
++ -- 134
+- -- 128
+* -- 873
+:= -- 1572
+add.period$ -- 64
+call.type$ -- 22
+change.case$ -- 172
+chr.to.int$ -- 22
+cite$ -- 28
+duplicate$ -- 318
+empty$ -- 636
+format.name$ -- 161
+if$ -- 1760
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 24
-newline$ -- 123
-num.names$ -- 69
-pop$ -- 146
+newline$ -- 111
+num.names$ -- 63
+pop$ -- 142
 preamble$ -- 1
-purify$ -- 186
+purify$ -- 174
 quote$ -- 0
-skip$ -- 257
+skip$ -- 239
 stack$ -- 0
-substring$ -- 747
-swap$ -- 56
+substring$ -- 723
+swap$ -- 54
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 140
+type$ -- 128
 warning$ -- 5
-while$ -- 83
+while$ -- 79
 width$ -- 0
-write$ -- 307
+write$ -- 279
 (There were 5 warnings)

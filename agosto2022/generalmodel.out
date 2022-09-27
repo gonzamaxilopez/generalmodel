@@ -1,0 +1,30 @@
+\BOOKMARK [1][-]{Doc-Start}{Abstract}{}% 1
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 2
+\BOOKMARK [1][-]{section.2}{Distribution and abundance of parasites}{}% 3
+\BOOKMARK [1][-]{section.3}{Mating probability of parasites acquired by ingestion of eggs}{}% 4
+\BOOKMARK [2][-]{subsection.3.1}{Distribution of parasites by sex}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.2}{Mean number of fertilized female parasites and mating probability \(density-independent\)}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.3}{Density-dependent fecundity}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.4}{Mean egg production per host}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.5}{Mean fertilized egg production}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.6}{Mating probability and density-dependence effects}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.7}{Mean effective transmission contribution per female parasite}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.8}{Some examples}{section.3}% 12
+\BOOKMARK [3][-]{subsubsection.3.8.1}{Poisson}{subsection.3.8}% 13
+\BOOKMARK [3][-]{subsubsection.3.8.2}{Negative binomial}{subsection.3.8}% 14
+\BOOKMARK [3][-]{subsubsection.3.8.3}{Zero-inflated and hurdle Models}{subsection.3.8}% 15
+\BOOKMARK [3][-]{subsubsection.3.8.4}{Zero-inflated Poisson and zero-inflated negative binomial models}{subsection.3.8}% 16
+\BOOKMARK [1][-]{section.4}{Mating probability of parasites acquired by skin-penetrating}{}% 17
+\BOOKMARK [2][-]{subsection.4.1}{Some examples}{section.4}% 18
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Poisson}{subsection.4.1}% 19
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Negative binomial}{subsection.4.1}% 20
+\BOOKMARK [1][-]{section.5}{Computer simulation}{}% 21
+\BOOKMARK [2][-]{subsection.5.1}{Parasitic infection caused by ingestion of infective eggs}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.2}{Parasitic infection caused by skin-penetrating}{section.5}% 23
+\BOOKMARK [1][-]{section.6}{Discussion and Conclusions}{}% 24
+\BOOKMARK [1][-]{section*.4}{Bibliography}{}% 25
+\BOOKMARK [1][-]{appendix.A}{Appendix}{}% 26
+\BOOKMARK [2][-]{subsection.A.1}{Mean number of fertilized female parasites}{appendix.A}% 27
+\BOOKMARK [2][-]{subsection.A.2}{Mean egg production per host}{appendix.A}% 28
+\BOOKMARK [2][-]{subsection.A.3}{Mean fertilized egg production per host}{appendix.A}% 29
+\BOOKMARK [2][-]{subsection.A.4}{Independence in the variables F and M}{appendix.A}% 30
