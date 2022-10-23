@@ -1,5 +1,4 @@
-# Modeling of egg production and mating
-probability for macroparasites
+# Modeling of egg production and mating probability for macroparasites
 The reproductive habits of macroparasite are important for the
 study of the dynamics of their transmission. For populations of para-
 sites distributed by Poisson or negative binomial models, these habits
