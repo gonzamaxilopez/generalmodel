@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.1.31)  27 SEP 2022 03:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2022.1.31)  23 OCT 2022 04:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -139,6 +139,39 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count100
+\calc@Bcount=\count101
+\calc@Adimen=\dimen114
+\calc@Bdimen=\dimen115
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count102
+\calc@Cskip=\skip51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count103
+\l_MT_multwidth_dim=\dimen116
+\origjot=\skip52
+\l_MT_shortvdotswithinadjustabove_dim=\dimen117
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen118
+\l_MT_above_intertext_sep=\dimen119
+\l_MT_below_intertext_sep=\dimen120
+\l_MT_above_shortintertext_sep=\dimen121
+\l_MT_below_shortintertext_sep=\dimen122
+)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
 
@@ -191,16 +224,16 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen114
-\Hy@linkcounter=\count100
-\Hy@pagecounter=\count101
+\@linkdim=\dimen123
+\Hy@linkcounter=\count104
+\Hy@pagecounter=\count105
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count102
+\Hy@SavedSpaceFactor=\count106
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -222,17 +255,17 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-\c@Hy@tempcnt=\count103
+\c@Hy@tempcnt=\count107
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5125.
-\XeTeXLinkMargin=\dimen115
-\Fld@menulength=\count104
-\Field@Width=\dimen116
-\Fld@charsize=\dimen117
+\XeTeXLinkMargin=\dimen124
+\Fld@menulength=\count108
+\Field@Width=\dimen125
+\Fld@charsize=\dimen126
 Package hyperref Info: Hyper figures OFF on input line 6380.
 Package hyperref Info: Link nesting OFF on input line 6385.
 Package hyperref Info: Hyper index ON on input line 6388.
@@ -242,17 +275,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6405.
 Package hyperref Info: PDF/A mode OFF on input line 6410.
 LaTeX Info: Redefining \ref on input line 6450.
 LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count105
-\c@Item=\count106
-\c@Hfootnote=\count107
+\Hy@abspage=\count109
+\c@Item=\count110
+\c@Hfootnote=\count111
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
-\Fld@listcount=\count108
-\c@bookmark@seq@number=\count109
-\Hy@SectionHShift=\skip49
+\Fld@listcount=\count112
+\c@bookmark@seq@number=\count113
+\Hy@SectionHShift=\skip53
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2018/11/13 3.27 The Babel package
@@ -265,11 +298,11 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/11/13 3.27 Babel common definitions
-\babel@savecnt=\count110
-\U@D=\dimen118
+\babel@savecnt=\count114
+\U@D=\dimen127
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count111
+\bbl@dirlevel=\count115
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -277,10 +310,10 @@ File: babel.def 2018/11/13 3.27 Babel common definitions
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip50
-\bibsep=\skip51
+\bibhang=\skip54
+\bibsep=\skip55
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count112
+\c@NAT@ctr=\count116
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -291,46 +324,58 @@ Package tocbibind Note: Using section or other style headings.
 
 ) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
-\multirow@colwidth=\skip52
-\multirow@cntb=\count113
-\multirow@dima=\skip53
-\bigstrutjot=\dimen119
+\multirow@colwidth=\skip56
+\multirow@cntb=\count117
+\multirow@dima=\skip57
+\bigstrutjot=\dimen128
 )
-\c@thm=\count114
-\c@defn=\count115
-\c@exmp=\count116
-\c@case=\count117
+\c@thm=\count118
+\c@defn=\count119
+\c@exmp=\count120
+\c@case=\count121
 
-(./generalmodel.aux)
+(./generalmodel.aux
+
+LaTeX Warning: Label `phibn' multiply defined.
+
+
+LaTeX Warning: Label `hembrasfecun' multiply defined.
+
+
+LaTeX Warning: Label `prodhuevos' multiply defined.
+
+
+LaTeX Warning: Label `prodhuevosfecun' multiply defined.
+
+)
 \openout1 = `generalmodel.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
-\scratchdimen=\dimen120
+\scratchcounter=\count122
+\scratchdimen=\dimen129
 \scratchbox=\box29
-\nofMPsegments=\count119
-\nofMParguments=\count120
+\nofMPsegments=\count123
+\nofMParguments=\count124
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count121
-\MPscratchDim=\dimen121
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen130
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
 \everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -350,8 +395,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box30
-Package backref Info: ** backref set up for natbib ** on input line 63.
-Package hyperref Info: Link coloring OFF on input line 63.
+Package backref Info: ** backref set up for natbib ** on input line 64.
+Package hyperref Info: Link coloring OFF on input line 64.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -359,119 +404,134 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count124
+\c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
+LaTeX Info: Redefining \ref on input line 64.
+LaTeX Info: Redefining \pageref on input line 64.
+LaTeX Info: Redefining \nameref on input line 64.
 
 (./generalmodel.out) (./generalmodel.out)
 \@outlinefile=\write3
 \openout3 = `generalmodel.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 67.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 67.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (1.26047pt too wide) in paragraph at lines 66--66
+Overfull \hbox (1.26047pt too wide) in paragraph at lines 67--67
  [][] 
  []
 
 (./generalmodel.toc [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+[2])
 \tf@toc=\write4
 \openout4 = `generalmodel.toc'.
 
-
-[2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 132.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 133.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 132.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 133.
 
-Overfull \hbox (6.81949pt too wide) in paragraph at lines 132--133
+Overfull \hbox (6.81949pt too wide) in paragraph at lines 133--134
 []\OT1/cmr/m/n/12 discutir la dis-tribuci^^Son de los par^^Sasitos que que pre-
 senta sobre-dispersi^^Son.
  []
 
-[3] [4] [5] [6] [7] [8] [9] [10] [11] [12]
-<mating-prob-nb.png, id=350, 774.7344pt x 592.97536pt>
-File: mating-prob-nb.png Graphic file (type png)
-<use mating-prob-nb.png>
-Package pdftex.def Info: mating-prob-nb.png  used on input line 906.
-(pdftex.def)             Requested size: 350.99762pt x 268.6551pt.
- [13] [14 <./mating-prob-nb.png>]
-[15] (./generalmodel.bbl (./generalmodel.brf)
-\tf@brf=\write5
-\openout5 = `generalmodel.brf'.
-
- [16] [17]) [18] [19]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1107.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1107.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1107.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1107.
-
-[20] [21]
-File: mating-prob-nb.png Graphic file (type png)
-<use mating-prob-nb.png>
-Package pdftex.def Info: mating-prob-nb.png  used on input line 1155.
-(pdftex.def)             Requested size: 350.99762pt x 268.6551pt.
-<psiandphi.png, id=439, 824.6007pt x 576.11235pt>
+[3] [4] [5] [6] [7] [8] [9] [10] [11]
+<psiandphi.png, id=340, 824.6007pt x 576.11235pt>
 File: psiandphi.png Graphic file (type png)
 <use psiandphi.png>
-Package pdftex.def Info: psiandphi.png  used on input line 1163.
+Package pdftex.def Info: psiandphi.png  used on input line 753.
 (pdftex.def)             Requested size: 386.10214pt x 269.75311pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<phi-indep.png, id=440, 774.7344pt x 592.97536pt>
+[12] [13 <./psiandphi.png>] [14] [15]
+<phi-indep.png, id=389, 774.7344pt x 592.97536pt>
 File: phi-indep.png Graphic file (type png)
 <use phi-indep.png>
-Package pdftex.def Info: phi-indep.png  used on input line 1193.
+Package pdftex.def Info: phi-indep.png  used on input line 1049.
 (pdftex.def)             Requested size: 350.99762pt x 268.6551pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1202.
-[22] [23 <./psiandphi.png>] [24 <./phi-indep.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1202.
+ [16] [17 <./phi-indep.png>] [18]
+<nb.png, id=409, 824.6007pt x 576.11235pt>
+File: nb.png Graphic file (type png)
+<use nb.png>
+Package pdftex.def Info: nb.png  used on input line 1134.
+(pdftex.def)             Requested size: 350.99762pt x 245.2269pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19]
+<zinb.png, id=419, 824.6007pt x 576.11235pt>
+File: zinb.png Graphic file (type png)
+<use zinb.png>
+Package pdftex.def Info: zinb.png  used on input line 1163.
+(pdftex.def)             Requested size: 350.99762pt x 245.2269pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20 <./nb.png>] [21 <./zinb.png>] (./generalmodel.bbl (./generalmodel.brf)
+\tf@brf=\write5
+\openout5 = `generalmodel.brf'.
+
+
+[22] [23]) [24] [25]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1341.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1341.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1341.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1341.
+
+[26]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1436.
+ [27]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1436.
  (./generalmodel.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1202.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1202.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1436.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1436.
 
 Package rerunfilecheck Info: File `generalmodel.out' has not changed.
-(rerunfilecheck)             Checksum: 751E8C45EFAF86D4E172AD59FC0E2A68;2486.
+(rerunfilecheck)             Checksum: D66D08AFA19EE835169AA9D025F6DDDB;2798.
 Package rerunfilecheck Info: File `generalmodel.brf' has not changed.
-(rerunfilecheck)             Checksum: C67B889B3CBB86B2882D424AF6C681B6;2515.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1202.
+(rerunfilecheck)             Checksum: 4230DEF704E1C4AC0AFE82BAB45D211B;2458.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1436.
  ) 
 Here is how much of TeX's memory you used:
- 7508 strings out of 492615
- 107986 string characters out of 6131390
- 213487 words of memory out of 5000000
- 11197 multiletter control sequences out of 15000+600000
+ 8082 strings out of 492615
+ 117992 string characters out of 6131390
+ 228976 words of memory out of 5000000
+ 11741 multiletter control sequences out of 15000+600000
  14606 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,17n,31p,899b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,22n,31p,899b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -486,10 +546,10 @@ mr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on generalmodel.pdf (24 pages, 709557 bytes).
+Output written on generalmodel.pdf (27 pages, 917452 bytes).
 PDF statistics:
- 532 PDF objects out of 1000 (max. 8388607)
- 480 compressed objects within 5 object streams
- 119 named destinations out of 1000 (max. 500000)
- 264 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 580 PDF objects out of 1000 (max. 8388607)
+ 522 compressed objects within 6 object streams
+ 137 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,6 +6,8 @@
 \usepackage{amsthm}%agregado
 \usepackage{color}	
 
+\usepackage{mathtools}
+
 \usepackage[breaklinks=true,backref=page]{hyperref}
 
 \usepackage[english]{babel}%agregado
@@ -26,14 +28,14 @@
 %\newtheorem{prop}[thm]{Proposición}
 %\newtheorem{cor}[thm]{Corolario}
 \theoremstyle{plain}% default
-\newtheorem{thm}{Theorem}[section]
+\newtheorem{thm}{Theorem}[subsection]
 \newtheorem{lem}[thm]{Lemma}
 \newtheorem{prop}[thm]{Proposition}
 \newtheorem*{cor}{Corollary}
 %\newtheorem*{KL}{Klein’s Lemma}
 
 \theoremstyle{definition}
-\newtheorem{defn}{Definición}[section]
+\newtheorem{defn}{Definición}[subsection]
 %\newtheorem{conj}{Conjectura}[section]
 \newtheorem{exmp}{Ejemplo}[section]
 \newtheorem{xca}[exmp]{Ejercicio}
@@ -46,8 +48,7 @@
 
 \newcommand{\minitab}[2][l]{\begin{tabular}{#1}#2\end{tabular}}%para la tabla
 
-
-
+%\renewcommand{\bibname}{References}
 
 \title{Modeling of egg production and mating probability for macroparasites}
 \author{Gonzalo Maximiliano LOPEZ$^{1,3,4}$, Juan Pablo APARICIO$^{1,2}$\\
@@ -132,17 +133,33 @@ The reproductive habits of macroparasite are important for the study of the dyna
 	\item discutir la distribución de los parásitos que que presenta sobre-dispersión. binomial negativa como modelo estándar y mencionar los modelos inflados en cero  
 	\item discutir y dejar claro el sex ratio que usamos
 \end{itemize}
+	
+	The fractions of female and male parasites in a host are represented  by $\alpha$ and $\beta$, respectively, where $\alpha+\beta=1$.
+	Then the ratio of males to females is given by $\beta / \alpha : 1$. Also if $m$ is the mean burden of parasites, the mean number of
+	female and male parasites are given by $\alpha m$ and $\beta m $ respectively.
 
-	\section{Mating probability of parasites acquired by ingestion of eggs}
+	\section{Parasite infection by egg ingestion}
+	%{Mating probability of parasites acquired by ingestion of eggs}
+	
 	\label{sec:probapareamiento}
 	
-	In this section we consider that the transmission of parasites occurs through the ingestion of fertilized eggs of these parasites.
+	In this section, we consider that the infection by parasites occurs when a host ingests fertilized eggs of these parasites. This type of infection can occur when the host’s contaminated hands are placed in the mouth or by consuming fruit and vegetables that have not been carefully cooked, washed, or peeled. The parasites responsible for this type of infection are the helminths, such as \textit{Ascaris lumbricoides}, \textit{Trichuris trichiura}, among others.
+	%In this section we consider that the infection by parasites occurs when the host ingiere fertilized eggs of these parasites.
 	%This type of transmission can occur when the host's dirty, contaminated hands or fingers are placed in the mouth or by consuming vegetables and fruits that have not been carefully cooked, washed, or peeled.
-	This type of transmission occurs in parasites such as \textit{Ascaris lumbricoides}, \textit{Trichuris trichiura}, among others.
+	%This type of transmission occurs in parasites such as \textit{Ascaris lumbricoides}, \textit{Trichuris trichiura}, among others.
+	%The parasites responsible for this type of infection are the helminths such as \textit{Ascaris lumbricoides}, \textit{Trichuris trichiura}, among others.
 	
-	Since in this type of transmission, the host can ingest one or more fertilized eggs.
-	Then, the host can become infected with one or more parasites, which can be male or female depending on the sexual radius of the parasite.
-	Therefore, when analyzing the number of male or female parasites per host, these variables cannot be independent. Below we will present an analysis of these variables.
+	Since in this type of infection, the host can ingest one or more fertilized eggs. Then, the host can acquire one or more parasites, which can be male or female, depending on the sex ratio of the parasite. 
+	Therefore, when we analyze the variables ``the number of male parasites per host" and ``the number of female parasites per host", these variables cannot be independent.
+	%Therefore, when analyzing the variables the number of male parasites per host and the number female parasites per host, these variables cannot be independent. 
+	
+	%Below we will present an analysis of these variables. 
+	
+	In what follows, we develop the study some variables that intervene in the transmission dynamics of these parasitic infections, such as the mean number of fertile females per host, the mean number egg production per host, the mating probability, among others.
+	
+%	Since in this type of transmission, the host can ingest one or more fertilized eggs.
+%	Then, the host can acquire one or more parasites, which can be male or female depending on the sexual radius of the parasite.
+%	Therefore, when analyzing the number of male or female parasites per host, these variables cannot be independent. Below we will present an analysis of these variables.
 	
 	
 %	En esta sección vamos a considerar los %tipos de 
@@ -157,18 +174,19 @@ The reproductive habits of macroparasite are important for the study of the dyna
 	\subsection{Distribution of parasites by sex} %Distribution of parasites according to the sex}
 	\label{sec:distsexo}%Distribution of intestinal parasites according to the sex 
 	%For each individual parasite burden, the fraction of all females and males parasites are 
-	The fractions of female and male parasites in a host are represented  by $\alpha$ and $\beta$, respectively, where $\alpha+\beta=1$.
-	Then the ratio of males to females is given by $\beta / \alpha : 1$. Also if $m$ is the mean burden of parasites, the mean number of
-	female and male parasites are given by $\alpha m$ and $\beta m $ respectively.
+	%The fractions of female and male parasites in a host are represented  by $\alpha$ and $\beta$, respectively, where $\alpha+\beta=1$.
+	%Then the ratio of males to females is given by $\beta / \alpha : 1$. Also if $m$ is the mean burden of parasites, the mean number of
+	%female and male parasites are given by $\alpha m$ and $\beta m $ respectively.
 	
 	
 	
 	Let $W$ be a random variable, the number of parasites per host, and 
 	$F$ the number of female parasites per host.
-	We propose that the distribution of females parasites per host is modeled by a stopped sums distribution (\cite{johnson2005univariate}) and its probability generating function (pgf) is the function $G_W \circ G_B$, where $G_B$  is the pgf of the Bernoulli distribution ($G_B(s)=\beta + \alpha s$)\cite{johnson2005univariate}. 
-	Therefore the variable $F$ is given by $F=\sum_{i=1} ^W Y_i$ where $Y_i\sim \mathrm{Ber}(\alpha)$, and its pgf is 
-	
-	
+	We propose that the distribution of female parasites per host is modeled by 
+	%a stopped sums distribution 
+	a compound random variable
+	(\cite{johnson2005univariate}) and its probability generating function (pgf) is the function $G_W \circ G_B$, where $G_B$  is the pgf of the Bernoulli distribution given by $G_B(s)=\beta + \alpha s$. 
+	Therefore $F$ is given by $F=\sum_{i=1} ^W Y_i$ where $Y_i\sim \mathrm{Ber}(\alpha)$, and its pgf is of the form
 	\begin{equation}\label{genf}
 	\begin{split}
 	G_F(s)=&G_W(\beta + \alpha s)\\
@@ -179,55 +197,96 @@ The reproductive habits of macroparasite are important for the study of the dyna
 	\begin{equation}
 	\mu_F=\alpha \mu_W \qquad \sigma_F^2=\alpha^2\sigma_W^2+ \alpha\beta\mu_W
 	\end{equation}
-	The coefficient of dispersion, or variance-to-mean ratio 
-	$D=\frac{\sigma_F^2}{\mu_F}$, is given by \[D=\alpha\frac{\sigma_W^2}{\mu_W}+\beta\]
+	The coefficient of dispersion, $D=\frac{\sigma_F^2}{\mu_F}$, is given by \[D=\alpha\frac{\sigma_W^2}{\mu_W}+\beta\]
 	where $\frac{\sigma_W^2}{\mu_W}$ 
-	is the variance-to-mean ratio of $W$.
+	is the coefficient of dispersion of $W$.
 	Therefore, if $W$ is over-dispersed, so will $F$. 
 	
 	
-	Similarly, if $M$ is the number of male parasites,  $M = W - F$ and therefore its mean is $\mu_M=\beta\mu_W$. By the definition of $F$ and $M$ these are dependent variables.
+	Similarly, if $M$ is the number of male parasites per host,  $M = W - F$ and therefore its mean and variance are $\mu_M=\beta\mu_W$ and $\sigma_M^2=\beta^2\sigma_W^2+ \alpha\beta\mu_W$, respectively. By the definition $F$ and $M$ are dependent random variables.
 	
+	{\color{red}falta decir algo de las distribuciones por sexo}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	\subsection{Mean number of fertilized female parasites and mating probability (density-independent)}
-	%{Mean number of fertilized female parasites}
-
-	The parasites treated in this work present a polygamous mating system, and therefore the presence of at least one male parasite in the host ensures the fertility of all females.
-	Then, from the distribution of parasites by sex 
-	%presented in 
-	of the expression 
-	\eqref{genf}, the mean number of fertilized female parasites per host is given by
-	\begin{equation}\label{eqhembrasfecun}
-	\begin{split}
-	\sum_{n\geq 1}\sum_{j=0}^{n-1}j p_n\binom{n}{j}\alpha^j\beta^{n-j}
-	%&=\sum_{n\geq 0}\sum_{j=1}^{n-1}jp(n)\binom{n}{j}\alpha^j\beta^{n-j}\\
-	%&=\sum_{n\geq 0}p_n\sum_{j=1}^{n-1} j\binom{n}{j}\alpha^j\beta^{n-j}\\
-	%&=\sum_{n\geq 0}p_n(n\alpha-n\alpha^n)\\
-	&=\alpha  m - \alpha G'(\alpha)
-	\end{split}
-	\end{equation}
-	where the term $\sum_{j=0}^{n-1}j p_n\binom{n}{j}\alpha^j\beta^{n-j}$ 
-	is the probability of having at least one male in a burden of $n$ parasites. 
-	For more details of \eqref{eqhembrasfecun} see Appendix \eqref{hembrasfecun}. 
 	We will denote by $G$ to the pgf of the distribution of parasites per host $G_W$
 	and  $G'(x)=\left.\frac{\partial G}{\partial s}\right|_{x}$.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\subsection{Mean number of fertilized female parasites and a simple mating probability} % (density-independent)}
+	%{Mean number of fertilized female parasites}
+
+	The parasites treated in this work present a polygamous mating system, and therefore the presence of at least one male parasite in the host ensures the fertility of all females. {\color{red}poner referencia}
+	
+	\begin{prop}\label{hembrasfecun}
+		%Sean $p$ la fmp de la distribución de parásitos y $G$ su fgp, entonces el número medio de parásitos hembra fecundadas por hospedador esta dado por
+		The mean number of fertilized female parasites is given by     
+		\begin{equation}
+		\alpha  m - \alpha G'(\alpha)
+		\end{equation}
+		\begin{proof}
+			The presence of at least one male parasite in the host ensures the fertility of all females, so
+			%The presence of at least one male parasite in the host ensures that all females will be fertilized, so
+			%La presencia de uno o más parásitos macho en el hospedador es suficiente para asegura que todas las hembras serán fecundadas, entonces el número medio de parásitos hembra fecundadas por hospedador esta dado por
+			\begin{equation*}
+			\begin{split}
+			\sum_{n\geq 1}\sum_{j=0}^{n-1}j p_n\binom{n}{j}\alpha^j\beta^{n-j}
+			%&=\sum_{n\geq 0}\sum_{j=1}^{n-1}jp(n)\binom{n}{j}\alpha^j\beta^{n-j}\\
+			&=\sum_{n\geq 1}p_n\sum_{j=0}^{n-1} j\binom{n}{j}\alpha^j\beta^{n-j}\\
+			&=\sum_{n\geq 1}p_n(n\alpha-n\alpha^n)\\
+			\end{split}
+			\end{equation*}
+			where the last line is obtained from the expression of the mean of $\mathrm{B}(n,\alpha)$, $n\alpha=\sum_{j=0}^{n} j\binom{n} {j}\alpha^j\beta^{n-j}$. Therefore
+			%donde la ultima linea se obtiene de la expresión de la media de la $\mathrm{B}(n,\alpha)$,  $n\alpha=\sum_{j=0}^{n} j\binom{n}{j}\alpha^j\beta^{n-j}$. Por lo tanto 
+			\begin{equation*}
+			\begin{split}
+			\sum_{n\geq 1}\sum_{j=0}^{n-1}jp_n\binom{n}{j}\alpha^j\beta^{n-j}
+			&=\alpha\sum_{n\geq 1}np_n(1-\alpha^{n-1})\\
+			&=\alpha \left[ \sum_{n\geq 1}np_n-\sum_{n\geq 1}n\alpha ^{n-1}p_n\right] \\
+			&= \alpha  m - \alpha G'(\alpha) 
+			\end{split}
+			\end{equation*}
+		\end{proof}
+	\end{prop}
+	
+%	\begin{prop}
+%		The mean number of fertilized female parasites per host is given by
+%		\begin{equation}
+%			\alpha  m - \alpha G'(\alpha)
+%		\end{equation}
+%	\end{prop}
+	
+	
+%	Then, from the distribution of parasites by sex 
+%	%presented in 
+%	of the expression 
+%	\eqref{genf}, the mean number of fertilized female parasites per host is given by
+%	\begin{equation}\label{eqhembrasfecun}
+%	\begin{split}
+%	\sum_{n\geq 1}\sum_{j=0}^{n-1}j p_n\binom{n}{j}\alpha^j\beta^{n-j}
+%	%&=\sum_{n\geq 0}\sum_{j=1}^{n-1}jp(n)\binom{n}{j}\alpha^j\beta^{n-j}\\
+%	%&=\sum_{n\geq 0}p_n\sum_{j=1}^{n-1} j\binom{n}{j}\alpha^j\beta^{n-j}\\
+%	%&=\sum_{n\geq 0}p_n(n\alpha-n\alpha^n)\\
+%	&=\alpha  m - \alpha G'(\alpha)
+%	\end{split}
+%	\end{equation}
+%	where the term $\sum_{j=0}^{n-1}j p_n\binom{n}{j}\alpha^j\beta^{n-j}$ 
+%	is the probability of having at least one male in a burden of $n$ parasites. 
+%	For more details of \eqref{eqhembrasfecun} see Appendix \eqref{hembrasfecun}. 
+%	We will denote by $G$ to the pgf of the distribution of parasites per host $G_W$
+%	and  $G'(x)=\left.\frac{\partial G}{\partial s}\right|_{x}$.
 	
 %	Dado que los par\'asitos tratados aqu\'i presentan 
 %	%Recordemos que los parásitos estudiados en este trabajo presentan 
@@ -260,25 +319,26 @@ The reproductive habits of macroparasite are important for the study of the dyna
 %	Notemos que si consideramos la fgp de la distribución de hembras, $G_F$, obtenemos que la ultima expresión se la puede reescribir por $G_F'(1)-\alpha G'(\alpha)$.
 	
 	%\subsection{Mating probability}
-	We obtain that the mating probability of a female, as the ratio between the mean number of fertilized females and the mean number of females in a host,
+	On the other hand, 
+	we obtain a simple expression for the  mating probability of a female, as the quotient between the mean number of fertilized female parasites and the mean number of female parasites per host.
 %	Por lo arriba expuesto 
 %	%A partir de lo antes expuesto 
 %	obtenemos la probabilidad de apareamiento de una hembra, como el cociente entre el número medio de hembras fecundadas y el número medio de hembras en un hospedador
 	%Por lo arriba expuesto obtenemos la probabilidad de apareamiento de una hembra, como el cociente entre el n\'umero medio de hembras fecundadas y el n\'umero medio de hembras en un hospedador,
-	\begin{equation*}
-	\frac{\sum_{n\geq 0}\sum_{j=1}^{n-1}jp_n\binom{n}{j}\alpha^j\beta^{n-j}}
-	{\sum_{n\geq 0}\sum_{j=0}^{n}jp_n\binom{n}{j}\alpha^j\beta^{n-j}}
-	=\frac{\alpha  m -\alpha  G'(\alpha)}{\alpha m}
-	\end{equation*}
-	%Por lo tanto la probabilidad de apareamiento de una hembra, $\phi$, viene dada por la expresión
+%	\begin{equation*}
+%	\frac{\sum_{n\geq 0}\sum_{j=1}^{n-1}jp_n\binom{n}{j}\alpha^j\beta^{n-j}}
+%	{\sum_{n\geq 0}\sum_{j=0}^{n}jp_n\binom{n}{j}\alpha^j\beta^{n-j}}
+%	=\frac{\alpha  m -\alpha  G'(\alpha)}{\alpha m}
+%	\end{equation*}
+%	%Por lo tanto la probabilidad de apareamiento de una hembra, $\phi$, viene dada por la expresión
 	%Por lo tanto la probabilidad de apareamiento de una hembra que denotaremos por $\phi$ viene dada por
-	Therefore the probability of mating of a female that we will denote by $\phi$ is given by
+	Therefore the mating probability of a female who we denoted by $\phi$ is given by
 	\begin{equation}\label{probrepro1}
-	\phi=1-\frac{ G'(\alpha)}{m}
+	\phi=\frac{\alpha  m -\alpha  G'(\alpha)}{\alpha m}=1-\frac{ G'(\alpha)}{m}
 	\end{equation}
 	%Para el caso de considerar la   fgp de la distribución de hembras $\phi=1-\frac{ \alpha G'(\alpha)}{G_F'(1)}$.
 	
-	
+	{\color{blue} decir algo de la denso dependecia}
 	%\section{Mating probability and density-dependent fecundity}
 	\subsection{Density-dependent fecundity}
 	In population ecology, density-dependent processes occur when population growth rates are regulated by population density.
@@ -330,6 +390,30 @@ In macroparasites life-cycles, density-dependent processes can influence parasit
 	Due to the effects of density-dependent fecundity, the total egg production per female decreases as the parasite burden in host increases.
 	Therefore, from the distribution of parasites per host, the mean egg production per host %(see Appendix \ref{prodhuevos})
 	is given by the expression
+	
+	\begin{prop}\label{prodhuevos}
+		%Sean $p$ la fmp de la distribución de parásitos sobre una población de hospedadores y $G$ su fgp, la producción media de huevos por hospedador esta dada por
+		The mean egg production per host is given by
+		\begin{equation}
+		\lambda_0\alpha G'(z)
+		\end{equation}
+		\begin{proof}
+			%Consideramos que todas las hembras presentes en el hospedador pueden producir huevos según su fecundidad per cápita
+			We consider that all females present in the host can produce eggs according to their  per-capita fecundity
+			\begin{equation*}
+			\begin{split}
+			\sum_{n\geq 0}\sum_{j=0}^{n}j\lambda(n)p_n\binom{n}{j}\alpha^j\beta^{n-j}
+			&=\lambda_0\sum_{n\geq 0}\sum_{j=0}^{n}jz^{n-1}p_n\binom{n}{j}\alpha^j\beta^{n-j}\\
+			&=\lambda_0\sum_{n\geq 0}z^{n-1}p_n\sum_{j=0}^{n} j\binom{n}{j}\alpha^j\beta^{n-j}\\
+			&=\lambda_0\sum_{n\geq 0}z^{n-1}p_nn\alpha\\
+			&=\lambda_0\alpha  \sum_{n\geq 0}nz^{n-1}p_n \\
+			&=\lambda_0\alpha G'(z)
+			\end{split}
+			\end{equation*}
+		\end{proof}
+	\end{prop}
+	
+	
 %	Por los efectos de la fecundidad denso-dependiente, la producción total de huevos por parte de las hembras disminuye a medida que aumenta la carga parasitaria del hospedador. % sin hacer una distinción entre huevos fecundados  y no fecundados. 
 %	Por  lo tanto conociendo la distribución de los parásitos en la población de hospedadores,
 %	la producción media de huevos (ver Apéndice \ref{prodhuevos}) viene dada por la expresión  
@@ -340,6 +424,37 @@ In macroparasites life-cycles, density-dependent processes can influence parasit
 
 	\subsection{Mean fertilized egg production}
 	For the fertilized egg production, we must consider only the fertilized females. Therefore the expression for the mean fertilized egg production is given by
+	
+	\begin{prop}\label{prodhuevosfecun}
+		%Sean $p$ la fmp de la distribución de parásitos sobre una población de hospedadores y $G$ su fgp, la producción media de huevos fecundados por hospedador esta dada por
+		The mean fertilized egg production per host is given by
+		\begin{equation*}
+		\lambda_0\alpha G'(z)\left[1-\frac{G'(\alpha z)}{G'(z)} \right]
+		\end{equation*}
+		\begin{proof}
+			Identical to the previous demonstration but considering only fertilized females
+			%Idéntica a la demostración anterior pero considerando solo hembras fecundadas
+			\begin{equation*}
+			\begin{split}
+			\sum_{n\geq 0}\sum_{j=1}^{n-1}j\lambda(n)p_n\binom{n}{j}\alpha^j\beta^{n-j}
+			&=\lambda_0\sum_{n\geq 0}\sum_{j=1}^{n-1}jz^{n-1}p_n\binom{n}{j}\alpha^j\beta^{n-j}\\
+			&=\lambda_0\sum_{n\geq 0}z^{n-1}p_n\sum_{j=1}^{n-1} j\binom{n}{j}\alpha^j\beta^{n-j}\\
+			&=\lambda_0\sum_{n\geq 0}z^{n-1}p_n(n\alpha-n\alpha^n)\\
+			%\end{split}
+			%			\end{equation*}
+			%			donde la ultima linea se obtiene de la expresión de la media de $\mathrm{B}(n,\alpha)$,  $n\alpha=\sum_{j=0}^{n} j\binom{n}{j}\alpha^j\beta^{n-j}$. Por lo tanto 
+			%			\begin{equation*}
+			%			\begin{split}
+			%			\sum_{n\geq 0}\sum_{j=1}^{n-1}j\lambda(n)p_n\binom{n}{j}\alpha^j\beta^{n-j}
+			&=\lambda_0\alpha\sum_{n\geq 0}nz^{n-1}p_n(1-\alpha^{n-1})\\
+			&=\lambda_0\alpha \left[ \sum_{n\geq 0}nz^{n-1}p_n-\sum_{n\geq 0}n(\alpha z)^{n-1}p_n\right] \\
+			&=\lambda_0\alpha G'(z)\left[1-\frac{G'(\alpha z)}{G'(z)} \right] 
+			\end{split}
+			\end{equation*}
+		\end{proof}
+	\end{prop}
+	
+	
 	\begin{equation}\label{eggfecun}
 	\sum_{n\geq 1}\sum_{j=1}^{n-1}j\lambda(n)p_n\binom{n}{j}\alpha^j\beta^{n-j}=
 	\lambda_0 \alpha G'(z) \left[1-\frac{ G'(\alpha z)}{G'(z)}\right]  
@@ -610,6 +725,46 @@ If we consider the ratio between the mean fertilized egg production and the mean
 	
 	%PONER LA REF DE LA TABLA
 	
+	\begin{table}[h!]
+		\caption{The Effective contribution $\psi$ and the mating probability $\phi$ for zero-inflated Poisson (ZIPo) and zero-inflated negative binomial (ZINB) models.}
+		\label{table:function}
+		\centering
+		\resizebox{\textwidth}{!}{
+			%\centering
+			\begin{tabular}{c c c}
+				\hline  
+				\multirow{2}{*}{\minitab[c]{Statistical \\ model}}    & \multirow{2}{*}{effective contribution} & \multirow{2}{*}{mating probability}\\ 
+				%\hline
+				&  &\\
+				\hline
+				&  &\\
+				ZIPo  & $\psi=\exp\left( \dfrac{m}{1-\pi}(z-1)\right) $ & $\phi=1-\exp\left( -\dfrac{m z \beta}{1-\pi}\right) $	\\ 
+				%\hline 
+				&  &\\ 
+				%\hline 
+				ZINB  & $\psi=\left[ 1-\dfrac{m}{k(1-\pi)}(z-1)\right] ^{-(k+1)}$ & $\phi=1- \left[ \dfrac{1-\dfrac{m}{k(1-\pi)}(\alpha z-1)}{1-\dfrac{m}{k(1-\pi)}(z-1)}\right] ^{-(k+1)}$	\\ 
+				%\hline 
+				&  &\\
+			\end{tabular} 
+		}
+	\end{table}
+	
+	\begin{figure}[h!]
+		\centering 	\includegraphics[width=0.99\linewidth]{psiandphi}
+		\caption{The mean effective contribution per female parasite, $\psi$ (left) and the mating probability, $\phi$ (right) corresponding to Poisson (dash curve), negative binomial (solid curve), zero-inflated Poisson (dot curve) and zero-inflated negative binomial (dash dot curve) distributions. All as a function of the mean parasite burden $m$.}
+		\label{fig:phi}
+	\end{figure}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	%Zero-inflated models for parasite counts became widely used in the last decade \citep{abdybekova2012frequency,denwood2008distribution,ziadinov2010frequency}. 
 	%However, already in the 70's Crofton (\cite{crofton1971quantitative}) mentions the use of statistical models that can model the zeros in the parasite counts.
 	%}
@@ -726,7 +881,7 @@ If we consider the ratio between the mean fertilized egg production and the mean
 
 
 		
-\section{Mating probability  of parasites acquired by skin-penetrating}%Independence in the variables $F$ and $M$}
+\section{Parasite infection by skin-penetrating}%Independence in the variables $F$ and $M$}
 \label{sec:disindep}
 
 Unlike in section \ref{sec:probapareamiento}, we consider that the transmission of parasites occurs through the skin penetration. This type of transmission occurs in parasites such as Ancylostoma duodenale, Necator americanus, among others \cite{castelletto2014diverso,bryant2018critical}. 
@@ -739,7 +894,7 @@ In this type of transmission, the host can acquire a single parasite per infecti
 	
 	%In this type of transmission, the host can acquire a single parasite per infection event. Thus, the host can be infected with only one male or female parasite at a time.
 	%Therefore, when analyzing the number of male or female parasites per host, these variables must be independent. Here we will present an analysis of these variables.
-	
+\subsection{Distribution of parasites by sex}
 	As in the previous section, let $W$ be the random variable count of the number of parasites in a host and $F$, $M$ are the number of female and male parasites, respectively. 
 	In this section we analyze the case in which these variables are independent and therefore verify the following properties
 	%In this section, we analyze the case in which these variables are independent, that is, $W$, $F$ and $M$ verifies the following properties
@@ -890,25 +1045,41 @@ Note that the expression $\psi$ is the same one obtained in the section \ref{sec
 
 	In Figure \ref{fig:funphi} we show the behavior of the mating probability function for the cases in which the female and male parasites are distributed together or independently.
 
-%	\begin{figure}
-%		\centering
-%		\includegraphics[width=0.99\linewidth]{phiv2}
-%		\caption{Mating probability as a function of mean parasite load. The dashed curve (red) corresponds to a Poisson distribution ($k\to \infty$). 
-%		%{\color{red}
-%		The solid and dotted curves correspond to a negative binomial distribution with joint or independent distribution by sex, respectively, where $k = 1$ (blue), $k =0.2$ (yellow) and $k =0.05$ (green).
-%		%}
-%		} 
-%		\label{fig:funphi}
-%	\end{figure}
-
-\section{Computer simulation}
 \begin{figure}
-	\centering 	\includegraphics[width=0.9\linewidth]{mating-prob-nb}
-	\caption{Mating probability as a function of mean parasite load.
+	\centering 	\includegraphics[width=0.9\linewidth]{phi-indep}
+	\caption{Mating probability as a function of mean parasite load. The dashed curve (red) corresponds to a Poisson distribution ($k\to \infty$). The solid and dotted curves correspond to a negative binomial distribution with joint or independent distribution by sex, respectively, where $k = 1$ (blue), $k =0.2$ (yellow) and $k =0.05$ (green).
 	} 
-	%\label{fig:funphi}
+	\label{fig:funphi}
 \end{figure}
-\subsection{Parasitic infection caused by ingestion of infective eggs}
+
+	\subsubsection{Zero-inflated negative binomial}
+
+	\begin{itemize}
+	\item Mean effective transmission contribution by female parasite
+	\begin{equation}
+	%\begin{align}
+	\begin{split}
+	\psi&=\frac{G_M(z)G'_F(z)}{\alpha m}\\
+	&=\begin{multlined}[t]
+	\pi \left[ 1-\frac{m}{(1-\pi) k}(z-1)\right] ^{-(\alpha k+1)}\\
+	+ (1-\pi) \left[ 1-\frac{m}{(1-\pi) k}(z-1)\right] ^{-(k+1)}
+	\end{multlined}
+	\end{split}
+	%\end{align}
+	\end{equation}
+	
+	\item Mating probability and density-dependence effects
+	\begin{equation}
+	\begin{split}
+	\phi&= 1-\frac{p_M(0)}{G_M(z)}\\
+	&=1- \frac{\pi + (1-\pi) \left[ 1+\frac{m}{(1-\pi) k}\right] ^{-\beta k}}{\pi + (1-\pi) \left[ 1-\frac{m}{(1-\pi) k}(z-1)\right] ^{-\beta k}} 
+	\end{split}
+	\end{equation}
+	\end{itemize}
+
+\section{Monte Carlo simulation}
+
+\subsection{Parasite infection by egg ingestion}
 For this case we consider that the transmission of parasites is produced by the ingestion of fertilized eggs of these parasites. Here we can consider infection by \textit{Ascaris lumbricoides} and \textit{Trichuris trichiura}.
 
 
@@ -917,29 +1088,91 @@ Simulation algorithms presented in this section are based on
 the following assumptions and rules:
 
 \begin{itemize}
-	\item We considered a host population of size $N$
+	\item We considered a host population of size $N$.
 	
-	\item The parasite burden of each host is a random variable $W$
+	\item The parasite burden of each host is a random variable $W$.
 	
 	\item In the ingestion of infectious eggs, a host may acquire one or more parasites per transmission event. Thus, a host may acquire female or male parasites in the same transmission event.
 	
 	\item The female and male parasite burden are dependent random variables $F$ and $M$, respectively. The female parasite burden $F$ is obtained by doing $W$ Bernoulli trials with the parameter $\alpha$, where $\alpha$ is the sex ratio of the female parasites. The male parasite burden is given by $M=W-F$.  
 	
-	\item The egg production per host is given by $Fz^{W-1}$, where $z=\exp(\sigma)$ with $\sigma$ 
+	\item The egg production per host is given by $Fz^{W-1}$, where $z=\exp(\sigma)$ with $\sigma$ (Falta)
 	
-	\item The infective egg production per host is given by $I_{M>0}(M)Fz^{W-1}$, where $I_{M>0}$ is the indicator function of the set $\{M:M>0\}$  
+	\item The infective egg production per host is given by $I_{M>0}(M)Fz^{W-1}$, where $I_{M>0}$ is the indicator function of the set $M>0$.  
 	
-	\item The mating probability is obtained from the quotient between the mean infective egg production and the mean egg production.
+	\item The mating probability is obtained by quotient between the mean infective egg production and the mean egg production.
 
-	\item The mean effective contribution per female parasite is obtained of quotient between the mean egg production per host and the mean of female parasites per host. 
+	\item The mean effective contribution per female parasite is obtained by quotient between the mean egg production per host and the mean of female parasites per host. 
 
 	
 \end{itemize}
 
 All the simulations were carried out in RStudio (Version 1.0.136) .
 
-\subsection{Parasitic infection caused by skin-penetrating}
+\subsection{Parasite infection by skin-penetrating}
 
+\subsection{Some examples}
+\subsubsection{Negative Binomial}
+
+\begin{equation}\label{phibn}
+\psi=	 \left[ 1-\frac{m}{k}(z-1)\right] ^{-(k+1)} 
+\end{equation}     
+Finally the mating probability, $\phi$, is given by (see eq. \eqref{probrepro2})
+%Por ultimo la  probabilidad de apareamiento general, $\phi$, esta dada por 
+\begin{equation} 
+\phi=
+%1-\frac{G'(\alpha z)}{G'(z)}=
+1-\left[ \frac{ 1-\frac{m}{k}(\alpha z-1)}{1-\frac{m}{k}(z-1) }\right]  ^{-(k+1)} 
+\end{equation}
+
+Mating probability and density-dependence effects
+\begin{equation}
+\phi= 1-\frac{p_M(0)}{G_M(z)}=1-\left[ \frac{1+\frac{m}{k}}{1-\frac{m}{k}(z-1)}\right]^{-\beta k} 
+\end{equation}
+
+\begin{figure}[h!]
+	\centering 	\includegraphics[width=0.9\linewidth]{nb}
+	\caption{The mean contribution, $\psi$, and the mating probability, $\phi$, as a function of the mean parasite burden, $m$, for a parasite population with a negative binomial distribution. 
+		The dots (red and blue) are the empirical values of $\psi$ and $\phi$, obtained for the host population simulated.
+		of the simulations. 
+		The curves (continue and dash) correspond to the theorical models $\psi$ and $\phi$ obtained in REF.
+		The red dots and continue curves correspond to the infection by egg ingestion. 
+		The blue dots and dash curves correspond to the infection by skin-penetrating. 
+		%The black curve is the mating probability model obtained from equation (20). The red curve is the empirical mating probability obtained for the host population simulated.	
+%		The mean contribution ,$\psi$, and mating probability ,$\phi$, as a function of the mean parasite burden ,$m$, for a parasite population with a negative binomial distribution. 
+%	%The red point correspond case of infection by ingested egg.
+%	The dots (red and blue) are the empirical value of $\psi$ and $ \phi$, obtained of simulation. 
+%	The curves (continue and dash) are the theorical model of $\psi$ and $ \phi$. 
+%	The red dots and continue curves correspond to infection by egg ingestion.
+%	The blue dots and dash curves corresponde to infection by skin-penetrating.	
+%	The black curve is the mating probability model obtained from equation \eqref{ziphi}. 
+%	The red curve is the empirical mating probability obtained for the host population simulated. 
+	} 
+	\label{f:nb}
+\end{figure}
+
+
+\newpage
+\subsubsection{Zero-inflated negative binomial}
+
+\begin{equation}%\label{phibn}
+\psi=	\left\lbrace \pi + (1-\pi) \left[ 1-\frac{m}{(1-\pi) k}(z-1)\right] ^{-\beta k}\right\rbrace \left[ 1-\frac{m}{(1-\pi) k}(z-1)\right] ^{-(1+ \alpha k)}
+\end{equation}   
+
+\begin{figure}[h!]
+	\centering 	\includegraphics[width=0.9\linewidth]{zinb}
+	\caption{The mean egg contribution, $\psi$, and the mating probability, $\phi$, as functions of the mean parasite burden, $m$, for a parasite population with a zero-inflated negative binomial distribution. The dots (red and blue) are the simulation values of $\psi$ and $\phi$.
+	%, obtained for the host population simulated. %of the simulations. 
+	The curves (continue and dash) correspond to the theorical models $\psi$ and $\phi$ obtained in REF. The red dots and continued curves correspond to the infection by egg ingestion (dependiented distributions by sex). The blue dots and dashed curves correspond to the infection by skin-penetrating.
+%		Mating probability as a function of the mean parasite burden for a parasite population with a zero-inflated negative binomial distribution. 
+%		The black curve is the mating probability model obtained from equation \eqref{ziphi}. 
+%		The red curve is the empirical mating probability obtained for the host population simulated. 
+	} 
+	\label{f:zinb}
+\end{figure}
+
+	
+	
 	
 \section{Discussion and Conclusions}
 	
@@ -1009,6 +1242,7 @@ We also show that these expressions vary due to the effects of the density-depen
 	%\section*{References}
 	%\newpage
 	%\bibliographystyle{plain}
+	\renewcommand{\bibname}{References}
 	\bibliographystyle{apa}
 	\bibliography{references}	
 
@@ -1149,52 +1383,52 @@ We also show that these expressions vary due to the effects of the density-depen
 		\end{equation*}
 	\end{itemize}
 	
-\newpage
+%\newpage
+%
+%\begin{figure}
+%%	\centering 	\includegraphics[width=0.9\linewidth]{mating-prob-nb}
+%	\caption{Mating probability as a function of mean parasite load.
+%	} 
+%	%\label{fig:funphi}
+%\end{figure}
 
-\begin{figure}
-	\centering 	\includegraphics[width=0.9\linewidth]{mating-prob-nb}
-	\caption{Mating probability as a function of mean parasite load.
-	} 
-	%\label{fig:funphi}
-\end{figure}
 
+%\begin{figure}[h!]
+%	\centering 	\includegraphics[width=0.99\linewidth]{psiandphi}
+%	\caption{The mean effective contribution per female parasite, $\psi$ (left) and the mating probability, $\phi$ (right) corresponding to Poisson (dash curve), negative binomial (solid curve), zero-inflated Poisson (dot curve) and zero-inflated negative binomial (dash dot curve) distributions. All as a function of the mean parasite burden $m$.}
+%	\label{fig:phi}
+%\end{figure}
 
-\begin{figure}[h!]
-	\centering 	\includegraphics[width=0.99\linewidth]{psiandphi}
-	\caption{The mean effective contribution per female parasite, $\psi$ (left) and the mating probability, $\phi$ (right) corresponding to Poisson (dash curve), negative binomial (solid curve), zero-inflated Poisson (dot curve) and zero-inflated negative binomial (dash dot curve) distributions. All as a function of the mean parasite burden $m$.}
-	\label{fig:phi}
-\end{figure}
+%\begin{table}[h!]
+%	\caption{The Effective contribution $\psi$ and the mating probability $\phi$ for zero-inflated Poisson (ZIPo) and zero-inflated negative binomial (ZINB) models.}
+%	\label{table:function}
+%	\centering
+%	\resizebox{\textwidth}{!}{
+%		%\centering
+%		\begin{tabular}{c c c}
+%			\hline  
+%			\multirow{2}{*}{\minitab[c]{Statistical \\ model}}    & \multirow{2}{*}{effective contribution} & \multirow{2}{*}{mating probability}\\ 
+%			%\hline
+%			&  &\\
+%			\hline
+%			&  &\\
+%			ZIPo  & $\psi=\exp\left( \dfrac{m}{1-\pi}(z-1)\right) $ & $\phi=1-\exp\left( -\dfrac{m z \beta}{1-\pi}\right) $	\\ 
+%			%\hline 
+%			&  &\\ 
+%			%\hline 
+%			ZINB  & $\psi=\left[ 1-\dfrac{m}{k(1-\pi)}(z-1)\right] ^{-(k+1)}$ & $\phi=1- \left[ \dfrac{1-\dfrac{m}{k(1-\pi)}(\alpha z-1)}{1-\dfrac{m}{k(1-\pi)}(z-1)}\right] ^{-(k+1)}$	\\ 
+%			%\hline 
+%			&  &\\
+%		\end{tabular} 
+%	}
+%\end{table}
 
-\begin{table}[h!]
-	\caption{The Effective contribution $\psi$ and the mating probability $\phi$ for zero-inflated Poisson (ZIPo) and zero-inflated negative binomial (ZINB) models.}
-	\label{table:function}
-	\centering
-	\resizebox{\textwidth}{!}{
-		%\centering
-		\begin{tabular}{c c c}
-			\hline  
-			\multirow{2}{*}{\minitab[c]{Statistical \\ model}}    & \multirow{2}{*}{effective contribution} & \multirow{2}{*}{mating probability}\\ 
-			%\hline
-			&  &\\
-			\hline
-			&  &\\
-			ZIPo  & $\psi=\exp\left( \dfrac{m}{1-\pi}(z-1)\right) $ & $\phi=1-\exp\left( -\dfrac{m z \beta}{1-\pi}\right) $	\\ 
-			%\hline 
-			&  &\\ 
-			%\hline 
-			ZINB  & $\psi=\left[ 1-\dfrac{m}{k(1-\pi)}(z-1)\right] ^{-(k+1)}$ & $\phi=1- \left[ \dfrac{1-\dfrac{m}{k(1-\pi)}(\alpha z-1)}{1-\dfrac{m}{k(1-\pi)}(z-1)}\right] ^{-(k+1)}$	\\ 
-			%\hline 
-			&  &\\
-		\end{tabular} 
-	}
-\end{table}
-
-\begin{figure}
-	\centering 	\includegraphics[width=0.9\linewidth]{phi-indep}
-	\caption{Mating probability as a function of mean parasite load. The dashed curve (red) corresponds to a Poisson distribution ($k\to \infty$). The solid and dotted curves correspond to a negative binomial distribution with joint or independent distribution by sex, respectively, where $k = 1$ (blue), $k =0.2$ (yellow) and $k =0.05$ (green).
-	} 
-	\label{fig:funphi}
-\end{figure}
+%\begin{figure}
+%	\centering 	\includegraphics[width=0.9\linewidth]{phi-indep}
+%	\caption{Mating probability as a function of mean parasite load. The dashed curve (red) corresponds to a Poisson distribution ($k\to \infty$). The solid and dotted curves correspond to a negative binomial distribution with joint or independent distribution by sex, respectively, where $k = 1$ (blue), $k =0.2$ (yellow) and $k =0.05$ (green).
+%	} 
+%	\label{fig:funphi}
+%\end{figure}
 
 
 
