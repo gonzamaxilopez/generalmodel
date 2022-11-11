@@ -14,7 +14,7 @@
 \contentsline {subsubsection}{\numberline {3.6.3}Zero-inflated and hurdle Models}{11}{subsubsection.3.6.3}% 
 \contentsline {subsubsection}{\numberline {3.6.4}Zero-inflated Poisson and zero-inflated negative binomial models}{12}{subsubsection.3.6.4}% 
 \contentsline {section}{\numberline {4}Parasite infection by skin-penetrating}{13}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}Distribution of parasites by sex}{14}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.1}Distribution of parasites by sex}{13}{subsection.4.1}% 
 \contentsline {subsection}{\numberline {4.2}Some examples}{15}{subsection.4.2}% 
 \contentsline {subsubsection}{\numberline {4.2.1}Poisson}{15}{subsubsection.4.2.1}% 
 \contentsline {subsubsection}{\numberline {4.2.2}Negative binomial}{16}{subsubsection.4.2.2}% 
